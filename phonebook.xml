@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+      Note that this file MUST be encoded using UTF-16, or no entries will appear for Android!
+      Notepad++ is your friend here.  Click on the "Encoding" menu and ensure "Encode in UCS-2 Little Endian" is checked.
+      If it is not, click on "Convert to UCS-2 Little Endian".
+-->
+<WebServerInfo>
+    <ArrayOfWebServer>
+        <!--  
+                Add WebServer nodes here to add server entries to MyChart.
+                The following nodes are expected
+                
+                orgID                   Use a unique orgID for each environment.
+                                            orgIDs must be unique follow the format "EnvironmentID-EntryID".
+                                            Entries pointing to the same environment must have identical environment ids.
+                name                    The name of the entry
+                myChartBrandName  What you call your patient web portal.
+                locations               a comma separated list of US States or countries.
+                url                           The root of the address to the rest services for the entry.
+                                            e.g., https://mychart.domain.com/interconnect-path/WCF/Epic.MyChartMobile/MyChartMobile.svc/rest
+                imageHandle             The address for the image used to represent the organization in the organization selection list
+                loginIDlabel            The hint for the username field on the login screen.
+                loginPWlabel            The hint for the password field on the login screen.
+                ArrayOfOptions          Parent node for an extendible list of option nodes.
+                    option                        Parent node for a key value pair defining an option.  All keys are optional.
+                            key                           One of the following strings:
+                                                        loginbgcolor - color used for the background of the login screen. Follow format #RRGGBB
+                                                        loginImageURL - address to the image used on the login screen. If using apple watch, this option key is needed. For the apple watch login image, create another file at the same location with the same file name appended with _WM.
+                                                        defaultLanguage - two letter ISO code for the default language MyChart should be in after logging in. Default is en.
+                                                        allowedLanguages - comma separated list of two letter ISO codes for the languages allowed in MyChart after logging in. Default is the defaultLanguage.
+                                                        formatterLocale - two letter ISO language code and two letter ISO region code separated by a dash. Defines the format that dates, times, and numbers will be in MyChart after logging in. Default is en-US.
+                                                        mnemonics - comma separated list of keywords that may be used to search for this entry in addition to the name, brand name, and locations
+                                                        DefaultColor - defines which color is the default color for the first patient for users logging in for the first time. Should be an integer from 0-6 inclusive.
+                                                        AndroidCustomLogin - address for the webview Android users will see upon opening entry before logging in.
+                                                        AndroidAllowedHosts - comma separated list of host names that the Android webview will allow to be opened within MyChart. URLs with other hosts may be opened in the user's browser. (iOS allowed hosts are specified in HTML data tags on the site itself).
+                                                        iOSCustomLogin - address for the webview iOS users will see upon opening the entry before logging in.
+                                                        WebSiteName - Applicable if you have a separate Community Connect site.  Refer to Release Note 527051 for setup
+                            value                   Defines the value for one of the keys above.
+                
+                You can uncomment, modify, and/or copy the template below
+        -->
+            
+
+        <!-- 
+        <WebServer>
+            <orgID>witssdm-17</orgID>
+            <name>KP-SD</name>
+            <myChartBrandName>kp.org</myChartBrandName>
+            <websiteName>epicnative</websiteName>
+            <country>US</country>
+            <locations>California</locations>
+            <url>https://kphc-ic-dev65.appl.kp.org/interconnect-mycm-witssdm/WCF/Epic.MyChartMobile/MyChartMobile.svc/rest</url>
+            <imgData/>
+            <imageHandle>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/logo.png</imageHandle>
+            <loginIDlabel>User ID</loginIDlabel>
+            <loginPWlabel>Password</loginPWlabel>
+            <ArrayOfOptions>
+               <option>
+                    <key>myChartBrandLogo</key>
+                    <value>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/loginlogo.png</value>
+                </option>
+                        <option>
+                            <key>themeColor</key>
+                            <value>#6A1B9A</value>
+                        </option>
+                <option>
+                    <key>loginbgcolor</key>
+                    <value>#6A1B9A</value>
+                </option>
+                <option>
+                    <key>defaultLanguage</key>
+                    <value>en</value>
+                </option>
+                <option>
+                    <key>allowedLanguages</key>
+                    <value>en,mn,zw,es,nl,de,fr</value>
+                </option>
+                <option>
+                    <key>formatterLocale</key>
+                    <value>en-US</value>
+                </option>
+            </ArrayOfOptions>
+        </WebServer> 
+        -->
+        <WebServer>
+            <orgID>HCOTMA3</orgID>
+            <name>MAS HQAC - External</name>
+            <myChartBrandName>KP</myChartBrandName>
+            <websiteName>epicnative</websiteName>
+            <country>US</country>
+            <locations>Maryland</locations>
+            <url>https://apims-qa.kaiserpermanente.org/kp/esb-envlbl/hqac/care/qa/service/cd/dcaq/epicmychartmobilecareservices/v2020r/WCF/Epic.MyChartMobile/MyChartMobile.svc/esb-urn/urn:kp:hcotma3/</url>
+            <imgData/>
+            <!--<imageHandle>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/logo.png</imageHandle>-->
+            <loginIDlabel>User ID</loginIDlabel>
+            <loginPWlabel>Password</loginPWlabel>
+            <ArrayOfOptions>
+               <option>
+                    <key>myChartBrandLogo</key>
+                    <value>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/loginlogo.png</value>
+                </option>
+                        <option>
+                            <key>themeColor</key>
+                            <value>#6A1B9A</value>
+                        </option>
+                <option>
+                    <key>loginbgcolor</key>
+                    <value>#6A1B9A</value>
+                </option>
+                <option>
+                    <key>defaultLanguage</key>
+                    <value>en</value>
+                </option>
+                <option>
+                    <key>allowedLanguages</key>
+                    <value>en,mn,zw,es,nl,de,fr</value>
+                </option>
+                <option>
+                    <key>formatterLocale</key>
+                    <value>en-US</value>
+                </option>
+            </ArrayOfOptions>
+        </WebServer>
+        <WebServer>
+            <orgID>HCOTMA2</orgID>
+            <name>MAS HINT1 - External</name>
+            <myChartBrandName>KP</myChartBrandName>
+            <websiteName>epicnative</websiteName>
+            <country>US</country>
+            <locations>Maryland</locations>
+            <url>https://apims-qa.kaiserpermanente.org/kp/esb-envlbl/hint1/care/qa/service/cd/dcaq/epicmychartmobilecareservices/v2020r/WCF/Epic.MyChartMobile/MyChartMobile.svc/esb-urn/urn:kp:hcotma2/</url>
+            <imgData/>
+            <!--<imageHandle>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/logo.png</imageHandle>-->
+            <loginIDlabel>User ID</loginIDlabel>
+            <loginPWlabel>Password</loginPWlabel>
+            <ArrayOfOptions>
+               <option>
+                    <key>myChartBrandLogo</key>
+                    <value>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/loginlogo.png</value>
+                </option>
+                        <option>
+                            <key>themeColor</key>
+                            <value>#6A1B9A</value>
+                        </option>
+                <option>
+                    <key>loginbgcolor</key>
+                    <value>#6A1B9A</value>
+                </option>
+                <option>
+                    <key>defaultLanguage</key>
+                    <value>en</value>
+                </option>
+                <option>
+                    <key>allowedLanguages</key>
+                    <value>en,mn,zw,es,nl,de,fr</value>
+                </option>
+                <option>
+                    <key>formatterLocale</key>
+                    <value>en-US</value>
+                </option>
+            </ArrayOfOptions>
+        </WebServer>
+        <WebServer>
+            <orgID>WITS3</orgID>
+            <name>NCAL HREG1POC - External</name>
+            <myChartBrandName>KP</myChartBrandName>
+            <websiteName>epicnative</websiteName>
+            <country>US</country>
+            <locations>Maryland</locations>
+            <url>https://apims-qa.kaiserpermanente.org/kp/esb-envlbl/hreg1/care/qa/service/cd/dcaq/epicmychartmobilecareservices/v2020r/WCF/Epic.MyChartMobile/MyChartMobile.svc/esb-urn/urn:kp:wits3/</url>
+            <imgData/>
+            <!--<imageHandle>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/logo.png</imageHandle>-->
+            <loginIDlabel>User ID</loginIDlabel>
+            <loginPWlabel>Password</loginPWlabel>
+            <ArrayOfOptions>
+               <option>
+                    <key>myChartBrandLogo</key>
+                    <value>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/loginlogo.png</value>
+                </option>
+                        <option>
+                            <key>themeColor</key>
+                            <value>#6A1B9A</value>
+                        </option>
+                <option>
+                    <key>loginbgcolor</key>
+                    <value>#6A1B9A</value>
+                </option>
+                <option>
+                    <key>defaultLanguage</key>
+                    <value>en</value>
+                </option>
+                <option>
+                    <key>allowedLanguages</key>
+                    <value>en,mn,zw,es,nl,de,fr</value>
+                </option>
+                <option>
+                    <key>formatterLocale</key>
+                    <value>en-US</value>
+                </option>
+            </ArrayOfOptions>
+        </WebServer>
+        <WebServer>
+            <orgID>STSTMA2</orgID>
+            <name>MAS HREG1TST - INTERNAL</name>
+            <myChartBrandName>KP</myChartBrandName>
+            <websiteName>epicnative</websiteName>
+            <country>US</country>
+            <locations>Maryland</locations>
+            <url>https://api-gtwy-dev.kp.org/api/cd/dcaq/epicmychartmobile/v2020r/</url>
+            <imgData/>
+            <!--<imageHandle>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/logo.png</imageHandle>-->
+            <loginIDlabel>User ID</loginIDlabel>
+            <loginPWlabel>Password</loginPWlabel>
+            <ArrayOfOptions>
+               <option>
+                    <key>myChartBrandLogo</key>
+                    <value>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/loginlogo.png</value>
+                </option>
+                        <option>
+                            <key>themeColor</key>
+                            <value>#6A1B9A</value>
+                        </option>
+                <option>
+                    <key>loginbgcolor</key>
+                    <value>#6A1B9A</value>
+                </option>
+                <option>
+                    <key>defaultLanguage</key>
+                    <value>en</value>
+                </option>
+                <option>
+                    <key>allowedLanguages</key>
+                    <value>en,mn,zw,es,nl,de,fr</value>
+                </option>
+                <option>
+                    <key>formatterLocale</key>
+                    <value>en-US</value>
+                </option>
+            </ArrayOfOptions>
+        </WebServer>
+        <WebServer>
+            <orgID>DMDLNWV</orgID>
+            <name>NW HREG1TST - INTERNAL</name>
+            <myChartBrandName>KP</myChartBrandName>
+            <websiteName>epicnative</websiteName>
+            <country>US</country>
+            <locations>Orgeon/SW Washington</locations>
+            <url>https://api-gtwy-qa.kp.org/api/cd/dcaq/epicmychartmobile/v2020r/</url>
+            <imgData/>
+            <!--<imageHandle>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/logo.png</imageHandle>-->
+            <loginIDlabel>User ID</loginIDlabel>
+            <loginPWlabel>Password</loginPWlabel>
+            <ArrayOfOptions>
+               <option>
+                    <key>myChartBrandLogo</key>
+                    <value>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/loginlogo.png</value>
+                </option>
+                        <option>
+                            <key>themeColor</key>
+                            <value>#6A1B9A</value>
+                        </option>
+                <option>
+                    <key>loginbgcolor</key>
+                    <value>#6A1B9A</value>
+                </option>
+                <option>
+                    <key>defaultLanguage</key>
+                    <value>en</value>
+                </option>
+                <option>
+                    <key>allowedLanguages</key>
+                    <value>en,mn,zw,es,nl,de,fr</value>
+                </option>
+                <option>
+                    <key>formatterLocale</key>
+                    <value>en-US</value>
+                </option>
+            </ArrayOfOptions>
+        </WebServer>
+      <WebServer>
+            <orgID>STGN</orgID>
+            <name>NCAL HREG1TST - INTERNAL</name>
+            <myChartBrandName>KP</myChartBrandName>
+            <websiteName>epicnative</websiteName>
+            <country>US</country>
+            <locations>Northern California</locations>
+            <url>https://api-gtwy-uat.kp.org/api/cd/dcaq/epicmychartmobile/v2020r/</url>
+            <imgData/>
+            <!--<imageHandle>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/logo.png</imageHandle>-->
+            <loginIDlabel>User ID</loginIDlabel>
+            <loginPWlabel>Password</loginPWlabel>
+            <ArrayOfOptions>
+               <option>
+                    <key>myChartBrandLogo</key>
+                    <value>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/loginlogo.png</value>
+                </option>
+                        <option>
+                            <key>themeColor</key>
+                            <value>#6A1B9A</value>
+                        </option>
+                <option>
+                    <key>loginbgcolor</key>
+                    <value>#6A1B9A</value>
+                </option>
+                <option>
+                    <key>defaultLanguage</key>
+                    <value>en</value>
+                </option>
+                <option>
+                    <key>allowedLanguages</key>
+                    <value>en,mn,zw,es,nl,de,fr</value>
+                </option>
+                <option>
+                    <key>formatterLocale</key>
+                    <value>en-US</value>
+                </option>
+            </ArrayOfOptions>
+        </WebServer>
+      </ArrayOfWebServer>
+</WebServerInfo>
