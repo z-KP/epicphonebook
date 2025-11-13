@@ -122,6 +122,45 @@
             </ArrayOfOptions>
         </WebServer>
         <WebServer>
+            <orgID>STSTMA2</orgID>
+            <name>MAS HREG1TST - External</name>
+            <myChartBrandName>KP</myChartBrandName>
+            <websiteName>epicnative</websiteName>
+            <country>US</country>
+            <locations>Maryland</locations>
+            <url>https://apims-qa.kaiserpermanente.org/kp/esb-envlbl/hreg1/care/qa/service/cd/dcaq/epicmychartmobilecareservices/v2020r/WCF/Epic.MyChartMobile/MyChartMobile.svc/esb-urn/urn:kp:ststma2/</url>
+            <imgData/>
+            <!--<imageHandle>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/logo.png</imageHandle>-->
+            <loginIDlabel>User ID</loginIDlabel>
+            <loginPWlabel>Password</loginPWlabel>
+            <ArrayOfOptions>
+               <option>
+                    <key>myChartBrandLogo</key>
+                    <value>https://mycc-hreg2-sd.appl.kp.org:444/myccsd/en-US/images/loginlogo.png</value>
+                </option>
+                        <option>
+                            <key>themeColor</key>
+                            <value>#6A1B9A</value>
+                        </option>
+                <option>
+                    <key>loginbgcolor</key>
+                    <value>#6A1B9A</value>
+                </option>
+                <option>
+                    <key>defaultLanguage</key>
+                    <value>en</value>
+                </option>
+                <option>
+                    <key>allowedLanguages</key>
+                    <value>en,mn,zw,es,nl,de,fr</value>
+                </option>
+                <option>
+                    <key>formatterLocale</key>
+                    <value>en-US</value>
+                </option>
+            </ArrayOfOptions>
+        </WebServer>
+        <WebServer>
             <orgID>HCOTMA2</orgID>
             <name>MAS HINT1 - External</name>
             <myChartBrandName>KP</myChartBrandName>
